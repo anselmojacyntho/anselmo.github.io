@@ -3987,22 +3987,34 @@ footer .social-links a:hover {
   position: relative;
   top: -30px;
 }
+.horizontal-social-links {
+  display: none;
+}
 
 @media only screen and (max-width: 479px) {
   .hero-v-two .name-headline-v-two .social-links {
     display: none;
   }
-}
+  
+  .horizontal-social-links {
+    display: block;
+  }
 
 @media only screen and (max-width: 641px) {
   .hero-v-two .name-headline-v-two .social-links {
     display: none;
+  }
+  .horizontal-social-links {
+    display: block;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .hero-v-two .name-headline-v-two .social-links {
     display: none;
+  }
+  .horizontal-social-links {
+    display: block;
   }
 }
 
