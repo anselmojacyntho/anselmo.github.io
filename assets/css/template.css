@@ -3999,7 +3999,7 @@ footer .social-links a:hover {
   .horizontal-social-links {
     display: block;
   }
-
+}
 @media only screen and (max-width: 641px) {
   .hero-v-two .name-headline-v-two .social-links {
     display: none;
