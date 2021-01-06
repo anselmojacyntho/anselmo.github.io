@@ -3578,6 +3578,27 @@ footer .social-links a:hover {
   }
 }
 
+.header-v-two .langbar {
+  list-style: none;
+  display: flex;
+  position: relative;
+  top: 10px;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.header-v-two .langbar li a {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.lang-active {
+  padding: 7px 3px 10px 3px;
+  border: 2px solid #0dd7f7;
+  border-radius: 50%;
+}
 /*------------------------------------------------------------------
       4.Hero Section
 -------------------------------------------------------------------*/

@@ -1,0 +1,20 @@
+{
+    "hero.role": "Soy ingeniero de software",
+    "hero.hello": "Hola, mi nombre es",
+    "hero.resume": "Ingeniero de Software durante 9 años en el mercado, soy un Agilista empedernido que mantiene el enfoque en la entrega de productos, independientemente de la solución. Tengo habilidades técnicas de Agile Coach, Scrum Master, Product Owner y especialista en PHP & Laravel.",
+    "experience.label": "Con que trabajé",
+    "experience.title": "Experiencias",
+    "experience.resume": "En el periodo de 9 años tuve la oportunidad de trabajar en proyectos de grandes empresas brasileñas y mundiales, como: ESPM, Via Varejo, Canon, Idealinvest, Ticomia, Yuny, Western Digital, Boa Vista SCPC, Valor Economico, Odontoprev",
+    "experience.first.period": "Actual",
+    "experience.first.role":"Ingeniero de Software",
+    "experience.first.description":"Con PHP como mi pila principal y su ecosistema, yo desempeño el papel de diseñar, documentar, guía, desarrollar y mantener proyetos web. Como especialista en back-end, amplié mis habilidades para crear microservicios e integrar tecnologías, agregando conocimientos de infraestructura con Docker y AWS a mis habilidades.",
+    "experience.second.period": "Mayo 2019",
+    "experience.second.role":"Desarrollador Full-stack",
+    "experience.second.description":"Periodo en el que trabjé como agente independiente brindando consultoria en el desarrollo de soluciones web. Creé apis, mantenimiento pagado en sistemas herdados utilizando las capacidades adquiridas con las stacks PHP, JS, Python. Dónde podría coordinar el implementación de metodologias ágiles en equipos de desarrollo.",
+    "experience.third.period": "Julio 2014",
+    "experience.third.role":"Analista de Desarrollo",
+    "experience.third.description":"Desempeñé el papel de analista en el desarrollo de portales de contenido, intranet y e-commerces dentro de un equipo local, reglamentado en locales ágiles. Tengo como principal stack el PHP, en este periodo basé mis conocimientos eb el desarrollo de software ágil y las funciones en equipos ágiles. Tuve una amplia experiencia haciendo consultoría asignada directamente al cliente y puede adquirir un amplia experiencia en el funcionamiento de las instituiciones.",
+    "skills.label": "Principal",
+    "skills.title": "Habilidades",
+    "skills.resume": "Durante mi carrera en el área de tecnologia, acumulé habilidades para convertirme en un artesano de sistemas web, desarrollando soluciones centrándose en el problema y la productividad."
+}

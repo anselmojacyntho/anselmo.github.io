@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.8.2/devicon.min.css">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/template.css" rel="stylesheet">
+  <link href="assets/css/template.css" rel="stylesheet">  
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
@@ -42,10 +42,15 @@
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo-12.svg" alt="" class="class="logo-2"></a>-->
         <ul>
-          <li><a href="#"><i class="ri-phone-line"></i>+55 13 9 9190-6150</a></li>
-          <li><a href="#"><i class="ri-mail-open-line"></i>anselmojacyntho@gmail.com</a></li>
+            <li><a href="#"><i class="ri-phone-line"></i>+55 13 9 9190-6150</a></li>
+            <li><a href="#"><i class="ri-mail-open-line"></i>anselmojacyntho@gmail.com</a></li>
         </ul>
+       
       </div>
+      <ul class="langbar">
+          <li><a class="switch-button lang-active" data-lang="pt"><img src="assets/css/flags/png/brazil.png"></a></li>
+          <li><a class="switch-button" data-lang="es"><img src="assets/css/flags/png/espanha.png"></a></li>
+      </ul>
     </div>
   </header><!-- End Header -->
 
@@ -56,7 +61,7 @@
           <div class="img-cover-v-two">
 
             <div class="placeholder">
-              <span class="status">
+              <span class="status" data-trans="hero.role">
                 Eu sou Engenheiro de Software
               </span>
               <!-- <a href="#portfolio" class="btn-get-started-v-two scrollto">Meu Trabalho</a> -->
@@ -69,19 +74,20 @@
         </div>
         <div class="col-lg-8 justify-content-center name-headline-v-two">
 
-          <h4 style="text-shadow: 1px 1px 2px #424242;">Olá, meu nome é</h4>
+          <h4 style="text-shadow: 1px 1px 2px #424242;" data-trans="hero.hello">Olá, meu nome é</h4>
           <h2 style="text-shadow: 1px 1px 2px #424242;">Anselmo.</h2>
 
           <div class="row">
             <div class="col-md-7 offset-md-3 margin-top-reset">
-              <p>
+              <p data-trans="hero.resume">
                   Engenheiro de Software a 9 anos no mercado, sou um Agilista inveterado que mantém o foco na entrega do produto, independente da solução.
-                  Tenho habilidades técnicas de Agile Coach, Scrum Master, Product Owner além de especialista em PHP&Laravel.
+                  Tenho habilidades técnicas de Agile Coach, Scrum Master, Product Owner além de especialista em PHP & Laravel.
               </p>
             </div>
             <div class="col-md-1 offset-md-1">
               <div class="social-links">
                 <a href="https://www.instagram.com/anselmojb/" class="instagram" target="_blank">Instagram.</a>
+                <a href="https://github.com/anselmojacyntho" class="github" target="_blank">Github.</a>
                 <a href="https://www.linkedin.com/in/anselmojbarbosa/" class="linkedin" target="_blank">Linkedin.</a>
               </div>
               <img class="mouse-icon" src="assets/img/mouse-icon.svg" alt="">
@@ -182,11 +188,11 @@
   <section id="experience" class="experience experience-v-two">
     <div class="container">
       <div class="section-title aos-init aos-animate">
-        <h6>Com o que trabalhei</h6>
-        <h2>Experiências</h2>
+        <h6 data-trans="experience.label">Com o que trabalhei</h6>
+        <h2 data-trans="experience.title">Experiências</h2>
         <div class="row justify-content-md-center">
           <div class="col col-lg-5">
-            <p>
+            <p data-trans="experience.resume">
                 No período de 9 anos tive a oportunidade de trabalhar em projetos de grandes empresas brasileiras e mundiais, tais como: 
                 ESPM, Via Varejo, Canon, Idealinvest, Ticomia, Yuny, Western Digital, Boa Vista SCPC, Valor Economico, Odontoprev<br>
             </p>
@@ -195,15 +201,14 @@
       </div>
       <div class="row justify-content-between aos-init aos-animate">
 
-
         <div class="col-md-4 d-flex align-content-top flex-wrap">
           <div class="row experience-item align-items-stretch">
             <div class="col-lg-2">  <i class="ri-terminal-window-line"></i></div>
             <div class="col">
-              <h6>Presente</h6>
-              <h4>Engenheiro de Software</h4>
-              <p>
-                Tendo como stack principal o PHP e seu ecosistema, desempenho o papel de projetar, documentar, guiar, desenvolver e manter projetos de web. Sendo especialista em back-end, ampliei
+              <h6 data-trans="experience.first.period">Presente</h6>
+              <h4 data-trans="experience.first.role">Engenheiro de Software</h4>
+              <p data-trans="experience.first.description">
+                Tendo como stack principal o PHP e seu ecossistema, desempenho o papel de projetar, documentar, guiar, desenvolver e manter projetos de web. Sendo especialista em back-end, ampliei
                 minhas capacidades na criação de microserviços e integração entre tecnologias, adicionando a minhas habilidades conhecimento de infraestrutura com Docker e AWS.
               </p>
             </div>
@@ -215,9 +220,9 @@
             <div class="col-lg-2"><i class="ri-a-b"></i></div>
             <div class="col">
             
-              <h6>Maio 2019</h6>
-              <h4>Full-stack Developer</h4>
-              <p>
+              <h6 data-trans="experience.second.period">Maio 2019</h6>
+              <h4 data-trans="experience.second.role">Full-stack Developer</h4>
+              <p data-trans="experience.second.description">
                 Período em que trabalhei como agente autonomo prestando consultoria no desenvolvimento de soluções web. Criei apis, prestei manutenção em sistemas legados 
                 utilizando as capacidades adquiridas com as stacks de PHP, JS, Python. Onde pude coordenar a implementação de metódologias ágeis em times de desenvolvimento.
               </p>
@@ -230,9 +235,9 @@
             <div class="col-lg-2"><i class="ri-drag-drop-line"></i></div>
             <div class="col">
 
-              <h6>Julho 2014</h6>
-              <h4>Analista de Desenvolvimento</h4>
-              <p>
+              <h6 data-trans="experience.third.period">Julho 2014</h6>
+              <h4 data-trans="experience.third.role">Analista de Desenvolvimento</h4>
+              <p data-trans="experience.third.description">
                 Desempenhei o papel de analista no desenvolvimento de portais de conteúdo, intranet e e-commerces dentro de um time local, regimentado
                 em premissas ágeis. Tendo como principal stack o PHP,
                 neste período fundamentei meus conhecimentos sobre o desenvolvimento ágil de software e os papéis em times ágeis. Tive ampla experiência realizando
@@ -251,10 +256,10 @@
       <div class="row">
         <div class="col-md-4 d-flex align-content-center flex-wrap">
           <div class="section-title">
-            <h6 class="text-left">Principais</h6>
-            <h2 class="text-left">Habilidades</h2>
-            <p class="text-left">
-                Há 9 anos trabalhando na área de tecnologia acumulei habilidades para me tornar um artesão de sistemas web, desenvolvendo soluções 
+            <h6 class="text-left" data-trans="skills.label">Principais</h6>
+            <h2 class="text-left" data-trans="skills.title">Habilidades</h2>
+            <p class="text-left" data-trans="skills.resume">
+                Durante minha carreira na área de tecnologia acumulei habilidades para me tornar um artesão de sistemas web, desenvolvendo soluções 
                 com foco no problema e produtividade. 
             </p>
             <!-- <p class="text-left"> <a href="#" class="btn-get-started-solid">Baixe meu currículo <i class="ri-download-line"></i></a></p> -->

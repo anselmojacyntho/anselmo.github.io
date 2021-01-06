@@ -1,7 +1,33 @@
 (function ($) {
-  "use strict";
-  //dark and light template trigger 
- 
+  
+  $(document).ready(function(){
+    
+    let switchLang = $(".switch-button");
+
+    switchLang.click(function(){
+      let button = $(this); 
+      let language = button.data('lang');
+
+      $.getJSON(`lang/${language}.json`, function( data ) {
+        let fields =  $('body').find('[data-trans]');
+          
+        fields.each(function(i, field) {
+          let el = $(field);
+          let trans = el.data('trans');
+          
+          el.text(data[trans]);
+
+          $('.lang-active').removeClass('lang-active');
+          
+        }); 
+
+        button.addClass('lang-active');
+      });
+    });
+
+  });
+  
+
   $("#owl-carousel-portfolio-one").owlCarousel({
     autoplay: true,
     lazyLoad: true,
@@ -104,4 +130,6 @@
     items: 1
   });
   return false;
+
+
 })(jQuery);
