@@ -5,8 +5,19 @@
     let switchLang = $(".switch-button");
 
     switchLang.click(function(){
+      
       let button = $(this); 
       let language = button.data('lang');
+      let cv = $('.btn-download-cv');
+      
+      let cvLang = {
+        "es": "assets/doc/cv_es.pdf",
+        "pt": "assets/doc/cv_pt.pdf"
+      };
+
+      cv.each(function(index, item){
+        $(item).attr('href', cvLang[language]);
+      })
 
       $.getJSON(`lang/${language}.json`, function( data ) {
         let fields =  $('body').find('[data-trans]');
@@ -27,7 +38,49 @@
 
   });
   
-
+  $(".testimonials-carousel").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    nav: true,
+    dots: false,
+    smartSpeed: 800,
+    navText: ['<i class="ri-arrow-left-line"></i>', '<i class="ri-arrow-right-line"></i>'],
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      900: {
+        items: 1
+      }
+    }
+  });
+  $(".testimonials-carousel-fade").owlCarousel({
+    autoplay: true,
+    dots: true,
+    loop: true,
+    nav: true,
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    dots: false,
+    smartSpeed: 800,
+    navText: ['<i class="ri-arrow-left-line"></i>', '<i class="ri-arrow-right-line"></i>'],
+    responsive: {
+      0: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      900: {
+        items: 1
+      }
+    }
+  });
+  
   $("#owl-carousel-portfolio-one").owlCarousel({
     autoplay: true,
     lazyLoad: true,

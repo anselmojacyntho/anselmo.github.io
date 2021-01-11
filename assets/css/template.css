@@ -99,10 +99,6 @@ html[data-template='dark'] .clients img {
   filter: grayscale(1) invert(1);
 }
 
-html[data-template='dark'] .testimonials {
-  background-image: url(../img/feature-bg.svg);
-}
-
 html[data-template='dark'] #footer {
   background: #202020;
 }
@@ -2329,11 +2325,10 @@ section {
    10. Testiomonial Section
 -------------------------------------------------------------------*/
 .testimonials {
-  height: 100vh;
+  height: auto !important;
   display: block;
   background-position: bottom;
   padding: 360px 0;
-  background-image: url(../img/feature-bg.svg);
   background-repeat: no-repeat;
   background-color: var(--lightBgMedium);
   background-attachment: fixed;
@@ -2373,6 +2368,7 @@ section {
 @media only screen and (min-width: 1248px) {
   .testimonials {
     padding: 120px 0;
+    height: auto !important;
   }
 }
 
@@ -2689,7 +2685,7 @@ section {
   padding: 0 0 0 160px;
   font-weight: 300;
   text-align: left;
-  font-size: 21px;
+  font-size: 16px;
   color: var(--lightColor);
   font-style: italic;
 }
